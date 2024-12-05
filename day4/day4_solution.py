@@ -54,3 +54,6 @@ for y in range(height):
             count_x_mas += 1
 
 print("Day 4, Part 2 Answer: " + str(count_x_mas))
+
+one_line_count_x_mas = sum([1 if (grid[y][x] == 'A' and (sorted((grid[y+1][x+1] if in_range(y+1, x+1) else "", grid[y-1][x-1] if in_range(y-1, x-1) else "")) == match) and (sorted((grid[y-1][x+1] if in_range(y-1, x+1) else "", grid[y+1][x-1] if in_range(y+1, x-1) else "")) == match)) else 0 for y in range(height) for x in range(width)])
+print("Day 4, Part 2 Answer (One line): " + str(one_line_count_x_mas))
