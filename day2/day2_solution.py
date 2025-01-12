@@ -19,7 +19,7 @@ with open('inputs.txt', 'r') as f:
         ):
              safe_levels += 1
 
-print("Day 2, Part 1 Answer: " + str(safe_levels))
+print("Day 2, Part 1 Answer:", str(safe_levels))
 
 
 ## Part 2 Solution ##
@@ -51,4 +51,4 @@ with open('inputs.txt', 'r') as f:
                 safe_levels_with_dampener += 1
                 break
 
-print("Day 2, Part 2 Answer: " + str(safe_levels_with_dampener))
+print("Day 2, Part 2 Answer:", str(safe_levels_with_dampener))

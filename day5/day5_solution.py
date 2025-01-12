@@ -1,4 +1,5 @@
 ## Part 1 Solution ##
+
 rules = {}
 updates = []
 with open('input.txt', 'r') as f:
@@ -31,7 +32,7 @@ processed_updates = [(update, is_valid_update(update)) for update in updates]
 valid_updates = [update[0] for update in processed_updates if update[1]]
 middle_values = [int(update[(len(update)//2)]) for update in valid_updates]
 
-print("Day 5, Part 1 Answer: " + str(sum(middle_values)))
+print("Day 5, Part 1 Answer:", str(sum(middle_values)))
 
 
 ## Part 2 Solution ##
@@ -56,4 +57,4 @@ invalid_updates = [update[0] for update in processed_updates if not update[1]]
 fixed_updates = [fix_update(update) for update in invalid_updates]
 fixed_middle_values = [int(update[(len(update)//2)]) for update in fixed_updates]
 
-print("Day 5, Part 2 Answer: " + str(sum(fixed_middle_values)))
+print("Day 5, Part 2 Answer:", str(sum(fixed_middle_values)))

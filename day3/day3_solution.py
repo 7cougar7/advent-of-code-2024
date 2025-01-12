@@ -13,7 +13,7 @@ with open('input.txt', 'r') as f:
         values = list(map(int, match.split(',')))
         mul_sum += (values[0] * values[1])
 
-print("Day 3, Part 1 Answer: " + str(mul_sum))
+print("Day 3, Part 1 Answer:", str(mul_sum))
 
 
 ## Part 2 Solution ##
@@ -31,4 +31,4 @@ with open('input.txt', 'r') as f:
         values = list(map(int, match.split(',')))
         mul_sum_toggle += (values[0] * values[1])
 
-print("Day 3, Part 2 Answer: " + str(mul_sum_toggle))
+print("Day 3, Part 2 Answer:", str(mul_sum_toggle))

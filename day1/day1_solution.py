@@ -16,7 +16,7 @@ right_list.sort()
 distance = np.subtract(left_list, right_list)
 distance_abs = np.abs(distance)
 
-print("Part 1 Answer: " + str(sum(distance_abs)))
+print("Part 1 Answer:", str(sum(distance_abs)))
 
 
 ## Part 2 Solution ##
@@ -27,4 +27,4 @@ l_unique_values = np.unique(left_list)
 for value in l_unique_values:
     uniqueness_score += (value * right_list.count(value))
 
-print("Part 1 Answer: " + str(uniqueness_score))
+print("Part 1 Answer:", str(uniqueness_score))
